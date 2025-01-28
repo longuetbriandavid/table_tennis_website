@@ -1,0 +1,135 @@
+html{
+	background-image:url(../img/background_001.jpg);
+	background-size:cover;
+    background-position:center;
+	background-attachment:fixed;
+}
+/*suppression des marges dans le body */
+body{
+	border-left:2px solid black;
+	border-right:2px solid black;
+    background-image:url(../img/background_002.jpg);
+    background-repeat: no-repeat;
+	background-size:cover;
+    background-position:center;
+	margin: auto;
+    max-width: 800px;
+	background-attachment:fixed;
+}
+body>section{
+	padding:0 60px;
+}
+/*Header, intégration d'une image de fond au h1*/
+.banniere{
+	margin-top:21px;
+    background-image: url(../img/background_003.jpg);
+    background-repeat: no-repeat;
+    padding:80px 0 58px 0;
+    background-position: center;
+    background-size:cover;
+	border-top:1px solid #430165;
+	border-bottom:1px solid #430165;
+}
+/*cacher le titre*/
+.cache{
+	display:none;
+}
+/*Mise en page*/
+audio{
+	display:block;
+	margin-left: auto;
+    margin-right: auto
+}
+main{
+    padding:0 15%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+main>section{
+    border:1px solid black;
+    border-radius:5px;
+    text-align:justify;
+    padding: 0 10px;
+    background-color:white;
+}
+img{
+    width:500px;
+    display:block;
+    margin:auto;
+    border-radius: 5px;
+    box-shadow:5px 5px;
+}
+h2{
+    text-align:center;
+    font-family:fantasy,sans-serif;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:white;
+}
+.partie1>p,.partie2>p{
+    padding:0 10px;
+    text-align:justify;
+	background-color:white;
+	border:1px solid black;
+    border-radius: 10px;
+}
+p{
+	text-indent:10px;
+}
+section>h3{
+    text-align:center;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:#FF0000;
+}
+section>.paragraphe1{
+    text-align:center;
+    text-decoration: underline;
+}
+.h21,.h22,.h23,.h24{
+	padding:5px 0 10px 0;
+}
+/*Intégration des sélecteurs*/
+
+/*Image à coté des h2*/
+.h21::before{
+    content:url("../img/img_003.png");
+    padding:0 10px;
+}
+.h22::after{
+    content:url("../img/img_004.png");
+    padding:0 10px;
+}
+.h23::before{
+    content:url("../img/img_005.png");
+    padding:0 10px;
+}
+.h24::after{
+    content:url("../img/img_006.png");
+    padding:0 10px;
+}
+/*Fin*/
+
+/*Responsive design*/
+@media (max-width: 600px){
+    .banniere{
+        margin-top:19px;
+    }
+    img{
+        width:250px;
+    }
+}
+@media (max-width: 1000px){
+    .partie1>p,.partie2>p{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    main>section{
+        text-align: center;
+    }
+}
+/*Animation*/
+img:hover{
+	transform:scale(1.5);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="21802468" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/otherPage.css" />
+  <link rel="icon" type="image/png" href="../img/icon_contact.png" />
+</head>
+<body>
+  <header>
+    <h1>test</h1>
+  </header>
+  <nav class="menu">
+    <a class="active" href="../index.html">Accueil</a> 
+    <a href="history.html">Histoire</a> 
+    <a href="event.html">Epreuves</a> 
+    <a href="legend.html">Légendes Olympiques</a> 
+	<a href="rule.html">Règles de Jeu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+		<h2>Une question sans réponse ? Contactez nous !</h2>
+		<figure><img src="../img/img_025.jpg" alt="https://etudes-doctorales.univ-paris-diderot.fr/sites/default/files/styles/image_100_pcent/public/contact-information.jpg?itok=A-I4Ikok"></figure>
+		<form action="https://ensweb.users.info.unicaen.fr/tp/decouverte-formulaires/recup.php" method="POST">
+			<h2>Vous pouvez nous contacter en utilisant le formulaire ci-dessous :</h2>
+			<fieldset>
+				<legend>Formulaire de contact</legend>
+				<fieldset>
+				<legend>Civilité</legend>
+				<label><input type="radio" name="civilité M" > M </label>
+				<label><input type="radio" name="civilité Mme" > Mme </label>
+				<label><input type="radio" name="civilité Mlle" > Mlle </label>
+				</fieldset>
+				<fieldset>
+				<legend>Informations de base</legend>
+				<label><input type="text" name="nom" placeholder="Nom" required/></label>
+				<label><input type="text" name="prénom" placeholder="Prénom" required/></label>
+				<label><input type="text" name="courriel" placeholder="Courriel" required/></label>
+				<label><input type="text" name="adresse" placeholder="Adresse" required/></label>
+				<label><input type="text" name="codepostal" placeholder="Code Postal" required/></label>
+				<label><input type="text" name="téléphone" placeholder="Téléphone" maxlength="10" required/></label>
+				<label>Zone géographique <select name="country"><option>France</option><option>Maroc</option><option>Guinée</option><option>Chine</option><option>Royaume-Uni</option><option>Autre pays européen</option><option>Autre pays non européen</option></select></label>
+				<label><textarea cols=50 rows="10" name="commentaire" placeholder="Posez votre question ?"></textarea></label>
+				</fieldset>
+			</fieldset>
+			<button type="submit">Soumettre les informations</button>
+		</form>
+  </main>
+  <footer>
+	  <p>Copyright © 2018 PingPonG.com. Tous droits réservés. </p>
+  </footer>
+</body>
+</html>

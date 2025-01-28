@@ -1,0 +1,8 @@
+/*Création du footer + mise en page*/
+footer{
+    background-color:#141414;
+    padding:15px 0;
+    text-align:center;
+    color:white;
+    border:1px solid black;
+}
